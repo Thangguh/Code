@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Currency Converter idr to dollar</title>
+</head>
+<body>
+<h1>Konversi Mata Uang</h1>
+<form>
+  <label for="rupiah">Nilai Rupiah:</label><br>
+  <textarea id="rupiah" name="rupiah" rows="4" cols="50">
+  </textarea>
+  <br>
+  <input type="button" value="Ubah ke Dollar" onclick="convertCurrency()">
+</form>
+<br>
+<h2>Hasil Konversi:</h2>
+<p id="converted"></p>
+
+<script>
+  function convertCurrency() {
+    var rupiah = document.getElementById("rupiah").value;
+    var convertedAmount = rupiah / 15800;
+    document.getElementById("converted").innerHTML = "USD: " + convertedAmount.toFixed(2);
+  }
+</script>
+
+</body>
+</html>
