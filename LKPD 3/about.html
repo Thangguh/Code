@@ -1,0 +1,175 @@
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <style>
+        header {
+        margin: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 8px;
+        width: x;
+        height: 50px; /*command*/
+        margin-right: 8px;
+        
+        
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: transparent;
+        float: right;
+        
+      }
+
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        color: black;
+      }
+
+      .topnav a:hover {
+        background-color: rgba(128, 128, 128, 0.384);
+        color: rgb(255, 255, 255);
+        transition: 0.5s ease-in-out;
+        border-radius: 10px;
+        backdrop-filter: blur(5px);
+      }
+
+      .topnav a.active {
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+      }
+        @import url('https://fonts.googleapis.com/css?family=Knewave|Raleway:500'); 
+body { 
+  margin: 0; 
+  padding: 0; 
+  background: url(zCity.jpeg);
+  background-size: cover;
+} 
+.main { 
+  width: 500px; 
+  height: 300px; 
+  box-sizing: border-box; 
+  padding: 3em; 
+  position: absolute; 
+  top: 53%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+} 
+.main::before, 
+.main::after { 
+  content: ""; 
+  width: 0; 
+  height: 0; 
+  box-sizing: inherit; 
+  margin-top: 30px; 
+  margin-bottom: -30px; 
+  border: 3px solid white; 
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.39);
+} 
+.main::before { 
+  top: 0; 
+  left: 0; 
+} 
+.main::after { 
+  bottom: 0; 
+  right: 0; 
+  z-index: 999; 
+} 
+.main:hover::before { 
+  width: 80%; 
+  height: 100%; 
+  margin-left: 40px;
+} 
+.main:hover::before { 
+  border-top-color: #ffffff; 
+  border-right-color: #ffffff; 
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+  border-radius: 20px; 
+} 
+.product__image { 
+  position: absolute; 
+  top: 50%; 
+  left: 25%; 
+  transform: translate(-50%, -50%); 
+  z-index: 99; 
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  border: 2px solid white;
+} 
+.container { 
+  width: 120%; 
+  height: 200px; 
+  margin-top: 20px; 
+} 
+ 
+.title { 
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-size: 35px; 
+    color:#ffffff; 
+    margin-bottom: 50px; 
+    position: relative; 
+    top:0; 
+    left: 0; 
+    transition: all 1s; 
+    z-index: 9; 
+    margin-right: 5px;
+} 
+.title > span{ 
+    font-size: 18px; 
+    display:block; 
+    color: #000000; 
+} 
+.desc{ 
+    width: 160px; 
+    font-family: 'Raleway', sans-serif; 
+    font-size: 14px; 
+    color:#ffffff; 
+    left:0; 
+    bottom: 2.5rem; 
+    line-height: 1.8; 
+    position: relative; 
+    transition: all 1s; 
+} 
+.main:hover .container .title, 
+.main:hover .container .desc{ 
+    left:40%; 
+}
+
+
+    </style>
+    <title>LKPD 3</title> 
+</head>
+<header>
+    <div class="topnav">
+      <a href="home.html">Home</a>
+      <a class="active" href="about.html">About</a>
+      <a href="contact.html">Tiktok</a>
+      <a href="hobby.html">Hobby</a>
+    </div> 
+  </header>
+
+<body> 
+    <div class="main"> 
+        <img class="product__image" src="zCipete5.jpg" alt="soda_can" /> 
+        <div class="container"> 
+          <div class="title">Tentang gw
+            <span>Nama gw tangguh</span> 
+          </div> 
+          <p class="desc">Olahraga dan hobi favorit gw angkat beban , calisthenic , dan panco , gw berbakat banget di olahraga panco.</p> 
+        </div> 
+      </div> 
+<!--  -->
+
+      
+</body> 
+</html>

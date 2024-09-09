@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LKPD 3</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .container:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      header {
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 25);
+        border: 1px;
+        background-color: linear-gradient(#0001, #000);
+        background-color: #00000028;
+        justify-content: center;
+        align-items: center;
+      }
+
+      header h1 {
+        float: left;
+        padding: 15px 0;
+        margin-left: 20px;
+        font-weight: 500;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: rgba(0, 0, 0, 0.479);
+      }
+
+      header span {
+        color: rgba(255, 255, 255, 0.582);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+
+      
+
+      header ul {
+        float: right;
+      }
+
+      header ul li {
+        display: inline-block;
+      }
+
+      header ul li a {
+        padding: 25px 10px;
+        display: inline-block;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        text-decoration: underline;
+        margin-top: 5px;
+      }
+
+      header ul li a:hover {
+        /* background-color: rgba(5, 5, 5, 0.623); */
+        color: white;
+        transition: all 0.5s ease-in-out;
+        border-radius: 15px;
+        box-shadow: 0 0 30px;
+        backdrop-filter: blur(5px);
+      }
+
+      main {
+        height: 71vh;
+      }
+
+      body {
+        background: url(City.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: middle;
+      }
+
+      .divBlur {
+        width: 550px;
+        height: 315px;
+        background-color: rgba(0, 0, 0, 0.4);
+        box-shadow: 0 0 10px;
+        border-radius: 10px;
+        backdrop-filter: blur(3px);
+        margin-top: 4rem;
+        padding: 20px;
+        border-radius: 39px;
+      }
+
+      #profile {
+        display: flex;
+        justify-content: center;
+        flex: 1;
+      }
+
+      .image {
+        display: flex;
+        width: 300px;
+        height: 300px;
+        margin-bottom: 6rem;
+        overflow: hidden;
+        border: 2px solid white;
+        border-radius: 24px;
+      }
+
+      .image img {
+        border-radius: 18px;
+        filter: grayscale(100%);
+        transition: 1s ease-in-out;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+      }
+
+      .image img:hover {
+        transform: scale3d(2, 2, 2);
+        filter: grayscale(0%);
+      }
+
+      .profile {
+        border-radius: 25px;
+      }
+
+      .textSection {
+        align-self: center;
+        text-align: center;
+      }
+
+      .textSection p {
+        font-weight: 300;
+      }
+
+      h2 {
+        font-size: 30px;
+        text-align: center;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        padding: 20px;
+        margin-top: 0.5rem;
+        margin-left: 35px;
+        margin-bottom: 1rem;
+      }
+
+      /* .textSection-p1 {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 20px;
+    margin-top: 2rem;
+}
+
+.textSection-p2 {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 20px;
+    margin-top: 2rem;
+} */
+
+      article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 300px;
+      }
+
+      /* footer {
+    padding: 50px 0 ;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    height: 20px;
+} */
+
+      footer {
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 25);
+        border: 1px;
+        background-color: linear-gradient(#0001, #000);
+        background-color: #00000028;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        bottom: 0;
+        height: 80px;
+        margin-top: 40px;
+      }
+
+      /* .menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0 10px;
+    background-color: #00000028;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu ul li a {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: poppins;
+    text-decoration: none;
+    height: 70px;
+    width: 70px;
+    position: relative;
+}
+
+.menu ul li a .title {
+    position: absolute;
+    font-size: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .5s;
+}
+
+.menu ul li a .icon {
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li a:hover .title {
+    transform: translate(-50%, calc(-50% + 10px));
+    opacity: 1;
+}
+
+.menu ul li a:hover .icon {
+    top: 0;
+    background-color: white;
+    color: white;
+    outline: 4px #00000028 solid;
+} */
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My<span>Contact</span></h1>
+    
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="skill.html">Skill</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="main">
+      <main id="profile">
+        <div class="divBlur">
+          <div class="image">
+            <div class="image-container">
+              <img src="Thang.jpeg" alt="orang keren" srcset="" />
+              <h2 class="sub">Tangguay</h2>
+              <span class="hidden-text">Lorem Ipsum Kontol</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="textSection">
+          <!-- <p class="textSection-p1">Hallo Gw</p> -->
+          <!-- <h2 class="title">Tangguay</h2> -->
+          <!-- <p class="textSection-p2">Nemtas Nih</p> -->
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <!-- <div class="menu">
+        <ul>
+            <li>
+                <a href=""><span class="icon"><i class="fa-solid fa-house-user"></i></span> <span
+                        class="title">Home</span></a>
+            </li>
+            <li>
+                <a href=""><span class="icon"><i class="fa-solid fa-wallet"></i></span> <span
+                        class="title">Wallet</span></a>
+            </li>
+            <li>
+                <a href=""><span class="icon"><i class="fa-solid fa-qrcode"></i></span> <span
+                        class="title">Scan</span></a>
+            </li>
+            <li>
+                <a href=""><span class="icon"><i class="fa-solid fa-cart-shopping"></i></span> <span
+                        class="title">Cart</span></a>
+            </li>
+            <li>
+                <a href=""><span class="icon"><i class="fa-solid fa-user"></i></span> <span
+                        class="title">Account</span></a>
+            </li>
+        </ul>
+    </div> -->
+    </footer>
+  </body>
+</html>
